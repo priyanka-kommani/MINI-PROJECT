@@ -48,7 +48,7 @@ To download the dataset, please visit [[insert dataset link]](https://www.cs.tor
 ## Training
 Preprocessing: Before training the CNN model, the images need to be preprocessed. This involves resizing the images, normalizing pixel values, and any other necessary preprocessing steps.
 
-Model Architecture: The CNN model architecture is designed specifically for image compression. It consists of several convolutional layers, pooling layers, and fully connected layers. The exact architecture details can be found in the model.py file.
+Model Architecture: The CNN model architecture is designed specifically for image compression. It consists of several convolutional layers, pooling layers, and fully connected layers. 
 
 Training: Adjust the hyperparameters, such as learning rate and batch size, as desired. The script will load the preprocessed images, split them into training and validation sets, and train the CNN model using the training data.
 
