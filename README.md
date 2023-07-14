@@ -31,3 +31,31 @@ Fully connected layers are traditionally used at the end of a CNN to make predic
 The training of a CNN involves feeding it with labeled training examples and optimizing its parameters (weights and biases) using techniques such as backpropagation and gradient descent. CNNs learn to automatically extract hierarchical representations of the input data, gradually learning more abstract and complex features as they progress through the layers.
 
 The success of CNNs in various computer vision tasks can be attributed to their ability to automatically learn hierarchical feature representations from raw pixel data, enabling them to capture intricate patterns and structures in images. CNNs have achieved state-of-the-art performance in tasks like image classification, object detection, image segmentation, and even more advanced tasks like image generation and style transfer.
+## Image Compression using CNN
+This project aims to explore image compression techniques using Convolutional Neural Networks (CNNs). The goal is to develop a model that can effectively compress images while preserving essential visual information.
+## Setup and Dependencies
+To run the code and reproduce the results, the following dependencies are required:
+
+Python 
+TensorFlow 
+NumPy 
+OpenCV 
+Please ensure that these dependencies are installed before proceeding.
+## Dataset
+The project utilizes a dataset of images for training and evaluation. The dataset consists of images collected from various sources. The images are in RGB format and have varying resolutions.
+
+To download the dataset, please visit [[insert dataset link]](https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz)https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz and follow the instructions provided.
+## Training
+Preprocessing: Before training the CNN model, the images need to be preprocessed. This involves resizing the images, normalizing pixel values, and any other necessary preprocessing steps.
+
+Model Architecture: The CNN model architecture is designed specifically for image compression. It consists of several convolutional layers, pooling layers, and fully connected layers. The exact architecture details can be found in the model.py file.
+
+Training: Adjust the hyperparameters, such as learning rate and batch size, as desired. The script will load the preprocessed images, split them into training and validation sets, and train the CNN model using the training data.
+
+Evaluation: After training, the model's performance needs to be evaluated.  It loads the trained model, evaluates it on the validation set, and provides metrics such as compression ratio and image quality.
+## Compression
+Once the model is trained and evaluated, it can be used for compressing images. It applies the compression algorithm using the CNN model and outputs a compressed version of the image.
+## Results and Analysis
+The results of the image compression using CNN can be found in the results directory. It includes compressed images, evaluation metrics, and any other relevant information for analysis.
+## Conclusion
+This project demonstrates the application of CNNs for image compression. By leveraging the power of deep learning, the developed model offers an alternative approach to traditional image compression techniques. Further experimentation and optimization can be explored to improve compression performance and explore new possibilities in this field.
